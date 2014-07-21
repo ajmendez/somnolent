@@ -17,6 +17,7 @@ if [ ! -f $OUTFILE ]; then
     echo 'Updating data'
     cp "$FILENAME" "$OUTFILE"
     ln -sf "$(basename $OUTFILE)" "$CURRFILE"
+    echo "Latest file: $OUTFILE"
 else
     echo 'File already exists: $OUTFILE'
 fi 
